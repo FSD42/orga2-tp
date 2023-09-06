@@ -1,0 +1,33 @@
+{
+  "name": "orga2-tp",
+  "version": "1.0.0",
+  "description": "TP Noté",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx webpack --watch --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RemyRch/orga2-tp.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RemyRch/orga2-tp/issues"
+  },
+  "homepage": "https://github.com/RemyRch/orga2-tp#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}

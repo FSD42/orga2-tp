@@ -15,7 +15,7 @@ export default (type, value) => {
             const now = new Date();
             const age = now.getFullYear() - date.getFullYear();
             if(0 < age && age < 15) return "Vous devez avoir plus de 15 ans !";
-            if(age < 115) return "Où se trouve la fontaine de jouvence ?";
+            if(age > 115) return "Où se trouve la fontaine de jouvence ?";
             if(date > now) return "Vous ne pouvez pas être né dans le futur !";
             return ""
             break;

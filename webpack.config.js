@@ -32,7 +32,7 @@ module.exports = {
       directory: path.join(__dirname, 'dist'),
     },
     compress: true,
-    port: 3000, // Port pour le serveur de développement
+    port: 3000,
   },
   plugins: [
     new HtmlWebpackPlugin({

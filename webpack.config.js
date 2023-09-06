@@ -1,10 +1,12 @@
 const path = require('path');
+const TerserPlugin = require("terser-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js', // Point d'entrée
   output: {
     filename: 'bundle.js', // Nom du fichier de sortie
-    path: path.resolve(__dirname, './dist') // Répertoire de sortie
+    path: path.resolve(__dirname, 'dist') // Répertoire de sortie
   },
   optimization: {
     minimize: true,
@@ -20,17 +22,11 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        test: /\.s[ac]ss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader']
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: 'src/index.html', // Chemin vers votre fichier HTML modèle
-      favicon: 'src/assets/img/favicon.ico' // Chemin vers votre favicon
-    }),
-  ],
   devServer: {
     static: {
       directory: path.join(__dirname, 'dist'),
@@ -38,4 +34,10 @@ module.exports = {
     compress: true,
     port: 3000, // Port pour le serveur de développement
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      favicon: './src/assets/favicon.ico',
+      template: './src/index.html',
+    }),
+  ]
 };

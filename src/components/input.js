@@ -1,5 +1,9 @@
 import checkValuesFunc from '../functions/checkValues'
 
+/**
+ * Return Input component
+ * @return { HTMLElement }
+ */
 export default ({attributes = { }, label: labelText = "", onChange = () => { console.warning("You're Input are not connected to onChange function !") }, required = true}) => {
     /**  form control Creation*/
     const formControl = document.createElement('div');

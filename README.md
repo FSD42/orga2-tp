@@ -3,25 +3,18 @@
 ## Sujet :
 
 ```
-# 08 - Sujet : Création d'un formulaire dynamique
+# TP Final: Réalisation d'un projet web avec Webpack et Git
 
-Dans cet exercice, vous allez mettre en pratique vos connaissances en JavaScript et _Webpack_ en créant un formulaire dynamique, en vous remémorant des cours du début de semaine sur le responsive et aussi sur l'accessibilité.
+Dans ce travail pratique final, vous allez collaborer en binôme pour mettre en oeuvre l'ensemble des compétences que vous avez acquises au cours de cette formation.
 
-L'objectif est de développer un formulaire interactif qui réagit en temps réel aux saisies de l'utilisateur. Vous utiliserez également _Webpack_ pour organiser et gérer vos fichiers JavaScript.
+Vous serez amenés à créer un projet web complet en utilisant _Webpack_ pour la gestion des fichiers et Git pour le contrôle de version. L'objectif est de créer une page web accessible, responsive et interactive, dotée d'un formulaire web dynamique et ergonomique.
 
-## Instructions
-1. **Création du repository et initialisation du projet avec npm**
-2. **Configuration de Webpack**
-3. **Création du Formulaire:**
-    - Créez un fichier JavaScript principal (par exemple `form.js`) dans lequel vous allez développer votre formulaire.
-    - Créez des fichiers complémentaires à ce fichier JavaScript en fonction de chacune des features du formulaires (un fichier pour vérifier un input, un pour faire une action spécifique, etc...)
-4. **Interaction avec le formulaire en temps réel:** Vous êtes libre techniquement de choisir l'interaction avec le formulaire, et le thème du formulaire. Vous serez évaluez sur la pertinence de l'interaction.
+Vous êtes libre de décider du thème de la page avec votre binôme. Il peut s'agir d'un site personnel, d'une page de présentation, d'un portfolio, etc...
 
-## Ce sur quoi vous serez évalués
-- Le formulaire réagit de manière dynamique aux actions de l'utilisateur, par exemple en affichant des messages d'erreur ou en modifiant le contenu en fonction des saisies.
-- Le code JavaScript est organisé en modules et est géré par _Webpack_.
-- Le formulaire est esthétiquement agréable, accessible, responsive et facile à utiliser.
-- Aucune erreur JavaScript majeure n'apparaît dans la console du navigateur.
+Il faut que le site contienne une navbar, un footer, un contenu à proposer et un formulaire.
+Imaginez que c'est un mélange entre votre sujet du Jour 2 avec la réalisation d'une page HTML et celui d'hier avec Webpack.
+
+**N'oubliez pas de travailler ensemble sur le même répertoire Git !** Pensez donc à collaborer efficacement durant ce projet. Committez régulièrement avec des messages explicites.
 ```
 
 ## Authors :

@@ -1,3 +1,9 @@
+/**
+ * Check if the value is valid or not depending on the type of the input and return the error message or empty string if the value is valid
+ * @param { String } type
+ * @param { String } value
+ * @return { String }
+ */
 export default (type, value) => {
     let regex = null;
     // Switch to check if the value is valid

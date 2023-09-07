@@ -3,6 +3,7 @@ window.addEventListener('user-edited', ({ detail: user }) => {
     const profileCard = document.querySelector('.profile-card')
     let age = null
     if(user.birthday) age = new Date().getFullYear() - new Date(user.birthday).getFullYear();
+    
     profileCard.querySelector('.firstName').textContent = `Prénom: ${user.firstname ?? ""}`
     profileCard.querySelector('.lastName').textContent = `Nom: ${user.lastname ?? ""}`
     profileCard.querySelector('.age').textContent = `Age: ${age ?? ""}`

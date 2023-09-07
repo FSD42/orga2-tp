@@ -5,11 +5,9 @@ export default (type, value) => {
         case 'email':
             regex = /^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/i;
             return regex.test(value) ? "" : "Votre email n'est pas valide !";
-            break;
         case 'password':
             regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*\W).{8,}$/;
-            return regex.test(value) ? "" : "Votre mot de passe doit contenir minimum, 1 majuscule, 1 minuscule, 1 chiffre, 1 caractère spécial  !";
-            break;
+            return regex.test(value) ? "" : "Votre mot de passe doit contenir 8 char minimum, 1 majuscule, 1 minuscule, 1 chiffre, 1 caractère spécial  !";
         case 'date':
             const date = new Date(value);
             const now = new Date();
@@ -18,17 +16,12 @@ export default (type, value) => {
             if(age > 115) return "Où se trouve la fontaine de jouvence ?";
             if(date > now) return "Vous ne pouvez pas être né dans le futur !";
             return ""
-            break;
         case 'text':
-            regex = /^[a-z0-9._-]{2,}$/i;
-            return regex.test(value) ? "" : "Ce champ ne doit pas être vide !";
-            break;
+            return value.length > 1 ? "" : "Ce champ ne doit pas être vide !";
         case 'tel':
             regex = /^[0-9]{10}$/i;
             return regex.test(value) ? "" : "Votre numéro de téléphone n'est pas valide !";
-            break;
         default:
             return "";
-            break;
     }
 }

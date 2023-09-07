@@ -27,7 +27,7 @@ export default ({attributes = { }, label: labelText = "", onChange = () => { con
 
     /** Set error */
     const setError = (err) => {
-        spanError.innerText = err
+        spanError.textContent = err
     }
 
     /** Set attributes for the input */

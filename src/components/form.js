@@ -32,15 +32,15 @@ export default () => {
     row.classList.add('row'); 
 
     /* Add inputs */
-    row.appendChild(Input({ attributes: { type: "text", name: "firstname", id: "firstname" }, label: "Prénom", onChange: (value) => editUser('firstname', value) } ));
-    row.appendChild(Input({ attributes: { type: "text", name: "lastname", id: "lastname" }, label: "Nom", onChange: (value) =>  editUser('lastname', value) }));
+    row.appendChild(Input({ attributes: { type: "text", name: "firstname", id: "firstname", placeholder: "Prénom" }, label: "Prénom", onChange: (value) => editUser('firstname', value) } ));
+    row.appendChild(Input({ attributes: { type: "text", name: "lastname", id: "lastname", placeholder: "Nom" }, label: "Nom", onChange: (value) =>  editUser('lastname', value) }));
 
     /* Append Row */
     form.appendChild(row)
 
     /* Append all inputs to form */
-    form.appendChild(Input({ attributes: { type: "email", name: "email", id: "email" }, label: "Email", onChange: (value) => { user = editUser('email', value) } }));
-    form.appendChild(Input({ attributes: { type: "date", name: "birthday", id: "birthday" }, label: "Date de naissance", onChange: (value) => editUser('birthday', value) }));
+    form.appendChild(Input({ attributes: { type: "email", name: "email", id: "email", placeholder: "Email" }, label: "Email", onChange: (value) => editUser('email', value) }));
+    form.appendChild(Input({ attributes: { type: "date", name: "birthday", id: "birthday", placeholder: "Date de naissance" }, label: "Date de naissance", onChange: (value) => editUser('birthday', value) }));
     form.appendChild(Input({ attributes: { type: "tel", name: "tel", id: "tel" },label: "Téléphone", onChange: (value) => editUser('phone', value) }));
     form.appendChild(Input({ attributes: { type: "password", name: "password", id: "password" },label: "Mot de passe", onChange: (value) => editUser('password', value) }));
     form.appendChild(Input({ attributes: { type: "password", name: "password2", id:"password2" },label: "Confirmer votre mot de passe", onChange: (value) => editUser('passwordComfirm', value) }));

@@ -1,3 +1,4 @@
+import footer from '../components/footer';
 import Navbar from '../components/navbar';
 
 /**
@@ -6,12 +7,17 @@ import Navbar from '../components/navbar';
  */
 export default () => {
     const element = document.createElement('div');
+
+    const main = document.createElement('main');
+    main.classList.add('error');
     
     const error = document.createElement('h1');
-    error.textContent = "Error";
+    error.textContent = "Error 404";
+    main.appendChild(error);
 
     element.appendChild(Navbar())
-    element.appendChild(error)
+    element.appendChild(main)
+    element.appendChild(footer())
 
     return element;
 }

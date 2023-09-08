@@ -418,6 +418,14 @@ $primary : #5865F2;
 
             }
         }
+
+        &.error {
+            margin-top: 10vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     // FOOTER

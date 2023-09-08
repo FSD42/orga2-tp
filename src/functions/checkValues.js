@@ -23,7 +23,7 @@ export default (type, value) => {
             if(date > now) return "Vous ne pouvez pas être né dans le futur !";
             return ""
         case 'text':
-            return value.length > 1 ? "" : "Ce champ ne doit pas être vide !";
+            return value?.trim().length > 1 ? "" : "Ce champ ne doit pas être vide !";
         case 'tel':
             regex = /^[0-9]{10}$/i;
             return regex.test(value) ? "" : "Votre numéro de téléphone n'est pas valide !";

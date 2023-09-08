@@ -13,6 +13,13 @@ export default () => {
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit.'
         },
         {
+            title: 'Dev',
+            category: 'Fullstack',
+            salary: '2600-3000',
+            location: 'Paris, FRANCE',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit.'
+        },
+        {
             title: 'Engineering Manager, Media Infrastructure',
             category: 'Core Tech Engineering',
             salary: '35000-3000000',

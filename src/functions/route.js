@@ -37,9 +37,5 @@ export default ({ path, element, title = "" }) => {
         if(!routes.includes(window.location.pathname) && path === "*") editDom();
     })
 
-    window.addEventListener('router-unknow', (e) => {
-        if(path === "*") editDom();
-    })
-
 }
 

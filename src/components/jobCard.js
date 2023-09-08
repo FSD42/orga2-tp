@@ -1,3 +1,5 @@
+import Button from "./navlink"
+
 /**
  * Return Job Card component
  * @return { HTMLElement }
@@ -19,9 +21,7 @@ export default ({ title, location, salary, description }) => {
     p.textContent = description;
     p.classList.add('job-card-description');
 
-    const button = document.createElement('button');
-    button.textContent = 'Apply now';
-    button.classList.add('job-card-button');
+    const button = Button({label: "Apply now" , path: "/profile", className: ["job-card-button"]});
 
     const div = document.createElement('div');
     div.classList.add('job-card');
